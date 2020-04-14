@@ -11,6 +11,7 @@ if (process.env.IS_TESTERY == "true") {
     args: process.env.TESTERY_CHROME_ARGS.split(","),
   });
 }
+
 const browser = new Builder().withCapabilities(capabilities).build();
 
 When("I navigate to {string}", async function (url) {
