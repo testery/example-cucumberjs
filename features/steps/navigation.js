@@ -8,7 +8,7 @@ const capabilities = Capabilities.chrome();
 
 if (process.env.IS_TESTERY == "true") {
   capabilities.set("chromeOptions", {
-    args: process.env.TESTERY_CHROME_ARGS.split(","),
+    args: process.env.TESTERY_CHROME_ARGS.split(";"),
   });
 }
 
