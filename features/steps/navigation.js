@@ -1,20 +1,16 @@
-const { Builder, By, Capabilities, Key } = require("selenium-webdriver");
+const { Builder } = require("selenium-webdriver");
+const { Options } = require("selenium-webdriver/chrome");
 const { When, Then, AfterAll } = require("cucumber");
 const { expect } = require("chai");
 const fs = require("fs");
-require("chromedriver");
 
-const capabilities = Capabilities.chrome();
+const options = new Options();
 
 if (process.env.IS_TESTERY == "true") {
-  capabilities.set("chromeOptions", {
-    args: process.env.TESTERY_CHROME_ARGS.split(";"),
-  });
+  options.addArguments(process.env.TESTERY_CHROME_ARGS.split(";"));
 }
 
-console.log("ags", process.env.TESTERY_CHROME_ARGS, process.env.TESTERY_CHROME_ARGS.split(";"));
-
-const browser = new Builder().withCapabilities(capabilities).build();
+const browser = new Builder().forBrowser("chrome").setChromeOptions(options).build();
 
 When("I navigate to {string}", async function (url) {
   await browser.get(url);
