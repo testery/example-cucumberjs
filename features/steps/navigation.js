@@ -3,6 +3,7 @@ const { Options } = require("selenium-webdriver/chrome");
 const { When, Then, AfterAll } = require("cucumber");
 const { expect } = require("chai");
 const fs = require("fs");
+require("chromedriver");
 
 const options = new Options();
 
