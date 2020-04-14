@@ -12,7 +12,7 @@ if (process.env.IS_TESTERY == "true") {
   });
 }
 
-console.log("capabilities", capabilities);
+console.log("ags", process.env.TESTERY_CHROME_ARGS, process.env.TESTERY_CHROME_ARGS.split(";"));
 
 const browser = new Builder().withCapabilities(capabilities).build();
 
