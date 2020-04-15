@@ -14,6 +14,7 @@ Feature: Navigation
   Scenario: This test will fail
     When I navigate to "http://www.google.com"
     Then the page title is 'Not Google'
+    Then this step does not execute
 
   @ignore
   Scenario: User Goes to Amazon

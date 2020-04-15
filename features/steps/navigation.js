@@ -27,6 +27,8 @@ Then("take a screenshot", async function () {
   fs.writeFileSync("./screenshots/" + Math.random() + ".png", value, "base64");
 });
 
+Then("this step does not execute", async function () {});
+
 AfterAll("end", async function () {
   await browser.quit();
 });
