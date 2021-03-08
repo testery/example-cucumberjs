@@ -38,3 +38,4 @@ Feature: Navigation
       | name   | url                   | title  |
       | Google | http://www.google.com | Google |
       | Yahoo  | http://www.yahoo.com  | Yahoo  |
+      | Bing  | http://www.bing.com  | Bing  |
