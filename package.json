@@ -1,23 +1,29 @@
 {
-  "name": "example-cucumberjs",
-  "version": "1.0.0",
-  "description": "Testing Testery's support of CucumberJS",
-  "main": "index.js",
-  "scripts": {
-    "test": "cucumber-js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/testery/example-cucumberjs.git"
-  },
-  "author": "Testery",
-  "homepage": "https://github.com/testery/example-cucumberjs#readme",
-  "devDependencies": {
-    "cucumber": "^6.0.5"
-  },
-  "dependencies": {
-    "chai": "^4.2.0",
-    "chromedriver": "^81.0.0",
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "name": "@cucumber/typescript-example",
+    "version": "1.0.0",
+    "description": "A simple example of a TypeScript Cucumber-JS project",
+    "main": "src/index.ts",
+    "scripts": {
+      "test": "cucumber-js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/cucumber/cucumber-js.git"
+    },
+    "keywords": [
+      "cucumber",
+      "bdd",
+      "typescript",
+      "example"
+    ],
+    "author": "Matt Wynne",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/cucumber/cucumber-js/issues"
+    },
+    "homepage": "https://github.com/cucumber/cucumber-js#readme",
+    "devDependencies": {
+      "@cucumber/cucumber": "*",
+      "ts-node": "^10.4.0"
+    }
   }
-}
