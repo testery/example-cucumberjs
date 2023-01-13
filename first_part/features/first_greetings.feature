@@ -1,3 +1,4 @@
+@FirstGreet
 Feature: First Greeting
 
 	Scenario: Say hello
