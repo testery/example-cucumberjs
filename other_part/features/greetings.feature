@@ -2,14 +2,14 @@
 Feature: Greeting
 
 	Scenario: Say hello
-		When the greeter says hello first
-		Then I should have heard "hello" first
+		When the greeter again says hello
+		Then I should have again heard "hello"
 
 	Scenario: Say hello Again
-		When the greeter says hello first
-		Then I should have heard "hello" first
+		When the greeter again says hello
+		Then I should have again heard "hello"
 
 	@hellothird
 	Scenario: Say hello Again Again
-		When the greeter says hello first
-		Then I should have heard "hello" first
+		When the greeter again says hello
+		Then I should have again heard "hello"
