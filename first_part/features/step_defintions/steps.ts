@@ -11,7 +11,6 @@ When("the greeter says hello first", function (this: MyWorld) {
   this.whatIHeard = new Greeter().sayHello();
 });
 
-Then(
-  "I should have heard {string} first", function (this: MyWorld, expectedResponse: string) {
+Then(/I should have heard "(.*)" first/, function (this: MyWorld, expectedResponse: string) {
     assert.equal(this.whatIHeard, expectedResponse);
 });
