@@ -10,12 +10,6 @@
         "type": "git",
         "url": "git+https://github.com/cucumber/cucumber-js.git"
     },
-    "keywords": [
-        "cucumber",
-        "bdd",
-        "typescript",
-        "example"
-    ],
     "author": "Matt Wynne",
     "license": "MIT",
     "bugs": {
