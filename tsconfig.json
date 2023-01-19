@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-      /* Basic Options */
-      "target": "ES2019",
-      "module": "commonjs",
-      "esModuleInterop": true
-    }
-}
