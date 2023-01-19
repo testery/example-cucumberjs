@@ -21,4 +21,4 @@ jobs:
           pip install testery --upgrade
       - name: Run Testery Tests
         run: |
-          testery create-test-run --token "$TESTERY_TOKEN" --include-tags "pass" --git-ref "$GITHUB_SHA" --project "example-cucumberjs"
+          testery create-test-run --token "$TESTERY_TOKEN" --include-tags "pass" --git-ref "$GITHUB_SHA" --project "example-cucumberjs" --environment "development"
