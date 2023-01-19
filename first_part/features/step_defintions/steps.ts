@@ -3,14 +3,10 @@ import assert from "assert";
 import { When, Then } from "@cucumber/cucumber";
 import { Greeter } from "../../../src";
 
-interface MyWorld {
-  whatIHeard: string;
-}
-
-When("the greeter says hello first", function (this: MyWorld) {
+When("the greeter says hello first", function () {
   this.whatIHeard = new Greeter().sayHello();
 });
 
-Then("I should have heard hello first", function (this: MyWorld) {
+Then("I should have heard hello first", function () {
     assert.equal(this.whatIHeard, "hello");
 });
