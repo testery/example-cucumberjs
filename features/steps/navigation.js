@@ -13,7 +13,7 @@ if (process.env.IS_TESTERY == "true") {
 
 const browser = new Builder().forBrowser("chrome").setChromeOptions(options).build();
 
-When("I navigate to {string}", async function (url) {
+When("I navigate to {string}", { timeout: 60 * 1000 }, async function (url) {
   await browser.get(url);
 });
 

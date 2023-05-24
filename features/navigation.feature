@@ -44,4 +44,4 @@ Feature: Navigation
     @regression
     Examples:
       | name   | url                   | title  |
-      | DuckDuckGo — Privacy, simplified.  | https://duckduckgo.com/  | DuckDuckGo — Privacy, simplified.  |      
+      | duckduckgo  | https://duckduckgo.com/  | DuckDuckGo — Privacy, simplified.  |      
