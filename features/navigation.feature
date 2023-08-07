@@ -34,8 +34,14 @@ Feature: Navigation
     When I navigate to '<url>'
     Then the page title is '<title>'
 
+    @smoke
     Examples:
       | name   | url                   | title  |
       | Google | http://www.google.com | Google |
       | Yahoo  | http://www.yahoo.com  | Yahoo  |
       | Bing  | http://www.bing.com  | Bing  |
+
+    @regression
+    Examples:
+      | name   | url                   | title  |
+      | duckduckgo  | https://duckduckgo.com/  | DuckDuckGo — Privacy, simplified.  |      
